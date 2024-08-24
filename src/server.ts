@@ -13,7 +13,11 @@ app.use(cors());
 
 // Routes
 app.get("/", (_req, res) => {
-  res.send("Express Typescript Server Running by sayan de");
+  res.json("Express Typescript Server Running by sayan de");
+});
+
+app.get("/sayan", (_req, res) => {
+  res.json("sayan de");
 });
 
 // // Routers
